@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Loader</title>
+    <link rel="stylesheet" href="./static/css/style2.css">
+
+</head>
+
+<body>
+
+    <div class="svg__loader-container">
+        <svg class="circle">
+            <circle cx="50" cy="50" r="40"stroke-miterlimit="10" />
+            <line fill="none" stroke-linecap="round" stroke="#fff" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="85" y2="50.5">
+                <animateTransform 
+                     attributeName="transform" 
+                     dur="2s"
+                     type="rotate"
+                     from="0 50 50"
+                     to="360 50 50"
+                     repeatCount="indefinite" />
+              </line>
+            <line fill="none" stroke-linecap="round" stroke="#fff" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="49.5" y2="74">
+                <animateTransform 
+                     attributeName="transform" 
+                     dur="60s"
+                     type="rotate"
+                     from="0 50 50"
+                     to="360 50 50"
+                     repeatCount="indefinite" />
+              </line>
+          </svg>
+
+        <svg>
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%"
+                style="stop-color:rgb(36, 36, 34);stop-opacity:1" />
+                <stop offset="100%"
+                style="stop-color:rgb(20, 14, 14);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <circle cx="100" cy="100" r="80"  fill="url(#grad1)" />
+            <text fill="#ffffff" font-size="45" font-family="Verdana"
+            x="50" y="86">SVG</text>
+          Sorry, your browser does not support inline SVG.
+          </svg>
+
+    </div>
+</body>
+
+</html>

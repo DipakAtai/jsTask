@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <!-- css files -->
+    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="./static/normalize.css">
+
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- material icon links -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- font family link -->
+    <link href="./static/inter.css" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/fonts/inter/inter.css"></noscript>
+
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+</head>
+
+<body>
+    <header class="header">
+        <div class="sidebar">
+            <div class="icons">
+                <div class="logo">
+                    <img src="./assets//icons/logo.svg" alt="">
+                </div>
+                <div class="icon_items">
+                    <i class="fa fa-bell"></i>
+                    <i class="fa fa-user"></i>
+                </div>
+            </div>
+            <div class="profile-section">
+                <div class="profile-img">
+                    <img src="./assets/images/profile-pic.jpg" alt="">
+                </div>
+                <h3>Brian Hughes</h3>
+                <p>hughes.brian@company.com</p>
+            </div>
+            <div class="side-menu">
+                <div class="vertical-nav">
+                    <p>Dashboards</p>
+                    <span> Unique dashboard designs
+                        </span>
+                    <ul>
+                        <li class="active"><i class="fa fa-photo"></i><span> Project</span></li>
+                        <li><i class="fa fa-pie-chart"></i> <span>Analytics</span></li>
+                    </ul>
+                </div>
+                <div class="vertical-nav">
+                    <p>Application</p>
+                    <span> custom made application design</span>
+                    <ul>
+                        <li><i class="fa fa-mortar-board"></i> <span>Academy</span></li>
+                        <li><i class="fa fa-calendar"></i> <span>Calendar</span></li>
+                        <li><i class="fa fa-commenting"></i> <span>Chat</span></li>
+                        <li><i class="fa fa-users"></i> <span>Contacts</span></li>
+                        <li class="sidebar-dropdown"><i class="fa fa-cart-plus"></i> <span>
+                            <button onclick="sidebarToggelMenu()" class="sidebar-dropdown-btn">eCommerce<span><i class="fa fa-angle-right"></i></span></button>
+
+                            <div id="mySidebarDropdown" class="sidebar-dropdown--content">
+                                <a href="#home">Home</a>
+                                <a href="#about">About</a>
+                                <a href="#contact">Contact</a>
+                            </div>
+                        </li>
+                        <li><i class="fa fa-cloud"></i> <span>File Manager</span></li>
+                        <li><i class="fa fa-life-saver"></i> <span>Help Center</span></li>
+                        <li><i class="fa fa-life-saver"></i> <span>Mail Box</span></li>
+                        <li><i class="fa fa-pencil-square-o"></i> <span>Notes</span></li>
+                        <li><i class="fa fa-life-saver"></i> <span>Scrumboard</span></li>
+                        <li><i class="fa fa-life-saver"></i> <span>Tasks</span></li>
+                    </ul>
+                </div>
+                <div class="vertical-nav">
+                    <p>Pages</p>
+                    <span> custom made pages design</span>
+                    <ul>
+                        <li><i class="fa fa-reorder"></i> <span>Activities</span></li>
+                        <li><i class="fa fa-lock"></i> <span>Authentication</span></li>
+                        <li><i class="fa fa-clock-o"></i> <span>Comming Soon</span></li>
+                        <li><i class="fa fa-clock-o"></i> <span>Error</span></li>
+                        <li><i class="fa fa-clock-o"></i><span>Invoice</span></li>
+                        <li><i class="fa fa-warning"></i> <span>Maintaince</span></li>
+                        <li><i class="fa fa-money"></i> <span>Pricing</span></li>
+                    </ul>
+                </div>
+
+                <div class="vertical-nav">
+                    <p>Pages</p>
+                    <span> custom made pages design</span>
+                    <ul>
+                        <li><i class="fa fa-bars"></i> <span>Material Compomnent</span></li>
+                        <li><i class="fa fa-bars"></i> <span>Material Compomnent</span></li>
+                        <li><i class="fa fa-bars"></i> <span>Material Compomnent</span></li>
+                        <li><i class="fa fa-bars"></i> <span>Material Compomnent</span></li>
+                        <li><i class="fa fa-bars"></i> <span>Material Compomnent</span></li>
+                        <li><i class="fa fa-bars"></i> <span>Material Compomnent</span></li>
+                        <li><i class="fa fa-bars"></i> <span>Material Compomnent</span></li>
+                        <li><i class="fa fa-bars"></i> <span>Material Compomnent</span></li>
+                        <li><i class="fa fa-bars"></i> <span>Material Compomnent</span></li>
+                        <li><i class="fa fa-bars"></i> <span>Material Compomnent</span></li>
+                        <li><i class="fa fa-bars"></i> <span>Material Compomnent</span></li>
+                        <li><i class="fa fa-bars"></i> <span>Material Compomnent</span></li>
+                        <li><i class="fa fa-bars"></i> <span>Material Compomnent</span></li>
+                        <li><i class="fa fa-bars"></i> <span>Material Compomnent</span></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="vertical-nav">
+                    <p>Documantation</p>
+                    <span> Everything you have to know about fuse</span>
+                    <ul>
+                        <li><i class="fa fa-clock-o"></i> <span>Change Log</span> <span class="badge">13.13</span></li>
+                        <li><i class="fa fa-clock-o"></i><span>Guide<span></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="vertical-nav">
+                    <p>Navigation Features</p>
+                    <span> Collapsable level and badges style</span>
+                            <ul>
+                                <li><i class="fa fa-check-circle-o"></i> <span>Level 0</span></li>
+                                <li><i class="fa fa-check-circle-o"></i> <span>Level 1</span></li>
+                                <li><i class="fa fa-check-circle-o"></i> <span>Level 0</span></li>
+                                <li><i class="fa fa-check-circle-o"></i> <span>Active Item</span></li>
+                                <li><i class="fa fa-check-circle-o"></i> <span>Disabled Collapsable</span></li>
+                            </ul>
+                </div>
+                <div class="vertical-nav">
+                    <div class="logo">
+                        <img src="./assets/images/logo-text-on-dark.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="dashboard-section">
+        <div class="header-section">
+            <nav class="navbar">
+                <div class="menu">
+                    <a href="#">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div class="icons">
+                    <div class="icons_items">
+                        <button>
+                        <img src="./assets/icons/united-states.png" alt="">
+                       </button>
+                    </div>
+                    <div class="icons_items">
+                        <button>
+                            <i class="fa fa-search"></i>
+                        </button>
+
+                    </div>
+                    <div class="icons_items">
+                        <button>
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="icons_items">
+                        <button>
+                            <i class="fa fa-bookmark-o"></i>
+                        </button>
+                    </div>
+                    <div class="icons_items">
+                        <button><i class="fa fa-envelope"></i></button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="heading">
+            <div class="profile-section">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="./assets/images/profile-pic.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="welcome-msg">Welcome back, Brian!</div>
+                        <div class="notification"><i class="fa fa-bell"></i> You have 2 new messages and 15 new tasks</div class="notification">
+                    </div>
+                </div>
+                <div class="btns">
+                    <button class="msg-btn"> <i class="fa fa-envelope"></i>  Message</button>
+                    <button class="stng-btn">  <i class="fa fa-gear"></i>   Setting</button>
+                </div>
+
+            </div>
+            <div class="dropdown-menu">
+                <div class="text">ACME Corp. Backend App</div>
+                <div class="dropdown-icon">
+                    <button>...</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- container -->
+
+        <div class="container">
+
+            <div class="sub-header">
+                <div class="tags">
+                    <div class="tags_items">
+                        <a class="active" href="#">Home</a>
+                    </div>
+                    <div class="tags_items">
+                        <a href="#">Budget</a>
+                    </div>
+                    <div class="tags_items">
+                        <a href="#">Team</a>
+                    </div>
+                </div>
+            </div>
+            <div class="body-wrapper">
+                <div class="cards">
+                    <div class="card">
+                        <div class="title">
+                            <p>Summary
+                                <span class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn"><span>...</span></button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#home">Home</a>
+                                    <a href="#about">About</a>
+                                    <a href="#contact">Contact</a>
+                                </div>
+                                </span>
+                            </p>
+
+                        </div>
+                        <div class="body">
+                            <div class="amount blue">21</div>
+                            <div class="detail blue">Due Task</div>
+                            <div class="secondary-text">Completed: <span>13</span></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">
+                            <p>Overdue <span class="dropdown">
+                                <button onclick="myFunction2()" class="dropbtn2"><span>...</span></button>
+                                <div id="myDropdown2" class="dropdown-content2">
+                                    <a href="#home">Home</a>
+                                    <a href="#about">About</a>
+                                    <a href="#contact">Contact</a>
+                                </div>
+                                </span>
+                            </p>
+
+                        </div>
+                        <div class="body">
+                            <div class="amount red">17</div>
+                            <div class="detail red">Tasks</div>
+                            <div class="secondary-text">from yestreday: <span>9</span></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">
+                            <p>Issuse <span class="dropdown">
+                                <button onclick="myFunction3()" class="dropbtn3"><span>...</span></button>
+                                <div id="myDropdown3" class="dropdown-content3">
+                                    <a href="#home">Home</a>
+                                    <a href="#about">About</a>
+                                    <a href="#contact">Contact</a>
+                                </div>
+                                </span>
+                            </p>
+
+                        </div>
+                        <div class="body">
+                            <div class="amount yellow">24</div>
+                            <div class="detail yellow">Open</div>
+                            <div class="secondary-text">closed today: <span>19</span></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">
+                            <p>Features <span class="dropdown">
+                                <button onclick="myFunction4()" class="dropbtn4"><span>...</span></button>
+                                <div id="myDropdown4" class="dropdown-content4">
+                                    <a href="#home">Home</a>
+                                    <a href="#about">About</a>
+                                    <a href="#contact">Contact</a>
+                                </div>
+                                </span>
+                            </p>
+
+                        </div>
+                        <div class="body">
+                            <div class="amount green">38</div>
+                            <div class="detail green">Proposal</div>
+                            <div class="secondary-text">Implemented: <span>16</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sta-section">
+                    <div class="sta-heading">
+                        <div class="left-heading">
+                            Github Issues Summary
+                        </div>
+                        <div class="right-heading">
+                            <button class="active">Last Week</button>
+                            <button>This week</button>
+                        </div>
+                    </div>
+                    <div class="sta-wrapper">
+                        <div class="graph">
+                            <div class="title">New vs. Closed</div>
+                            <div class="grap-img">
+                                <canvas id="myChart"></canvas>
+                                <!-- <img src="./assets/images/graph.png" alt=""> -->
+                            </div>
+                        </div>
+                        <div class="github-details">
+                            <p class="title">Overview</p>
+                            <div class="bigger-box">
+                                <div class="box-item blue-box">
+                                    <div class="number">197</div>
+                                    <div>New Issues</div>
+                                </div>
+                                <div class="box-item green-box ">
+                                    <div class="number">197</div>
+                                    <div>New Issues</div>
+                                </div>
+                            </div>
+                            <div class="smaller-box">
+                                <div class="smaller_box_item">
+                                    <div class="number">6</div>
+                                    <div class="text">Fixed</div>
+                                </div>
+                                <div class="smaller_box_item">
+                                    <div class="number">6</div>
+                                    <div class="text">Fixed</div>
+                                </div>
+                                <div class="smaller_box_item">
+                                    <div class="number">6</div>
+                                    <div class="text">Fixed</div>
+                                </div>
+                                <div class="smaller_box_item">
+                                    <div class="number">6</div>
+                                    <div class="text">Fixed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="task-des">
+                    <div class="task-dist">
+
+                        <div class="task-dist--heading">
+                            <div class="left--heading"> Task Distribution</div>
+                            <div class="right--heading">
+                                <button class="active">Last Week</button>
+                                <button>This Week</button>
+                            </div>
+                        </div>
+                        <div class="task-dist-image">
+
+                            <img src="./assets/images/task-dist-removebg.png" alt="">
+                            <!-- <canvas id="myChart"></canvas> -->
+                        </div>
+                        <div class="task-dist-card">
+                            <div class="task-dist-card--item border-right left-border-radius">
+                                <div class="number">594</div>
+                                <div class="text">New Task</div>
+                            </div>
+                            <div class="task-dist-card--item">
+                                <div class="number">594</div>
+                                <div class="text">New Task</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schd">
+                        <div class="task-schd--heading">
+                            <div class="left--heading"> Schedule
+                            </div>
+                            <div class="right--heading">
+                                <button class="active">Today</button>
+                                <button>Tomorrow</button>
+                            </div>
+                        </div>
+                        <div class="text-list">
+                            <div class="list-item">
+                                <span>
+                                    <button onclick="dataToggleShow()">
+                                    <i class="fa fa-angle-right"></i></button>
+                                
+                            </span>
+                                <p>Marketing Meeting</p>
+
+                                <p>
+                                    <span><i class="fa fa-clock-o"></i>
+                                       <span class="time"> 09:00 AM</span>
+                                    </span>
+                                    <span><i class="fa fa-map-marker"></i>
+                                        <span class="location">Conference room 1A</span>
+                                    </span>
+                                </p>
+
+                                <p id="data-show" style="display: none;">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+
+                            </div>
+                            <div class="list-item">
+                                <span>
+                                    <button onclick="dataToggleShow()">
+                                    <i class="fa fa-angle-right"></i></button>
+                                
+                            </span>
+                                <p>Coffee Break</p>
+
+                                <p>
+                                    <span><i class="fa fa-clock-o"></i>
+                                       <span class="time"> 10:30 AM</span>
+                                    </span>
+                                </p>
+
+                                <p id="data-show" style="display: none;">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+
+                            </div>
+                            <div class="list-item">
+                                <span>
+                                    <button onclick="dataToggleShow()">
+                                    <i class="fa fa-angle-right"></i></button>
+                                
+                            </span>
+                                <p>Public Beta Release</p>
+
+                                <p>
+                                    <span><i class="fa fa-clock-o"></i>
+                                       <span class="time"> 11:00 AM</span>
+                                    </span>
+                                </p>
+
+                                <p id="data-show" style="display: none;">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+
+                            </div>
+                            <div class="list-item">
+                                <span>
+                                    <button onclick="dataToggleShow()">
+                                    <i class="fa fa-angle-right"></i></button>
+                                
+                            </span>
+                                <p>Lunch</p>
+
+                                <p>
+                                    <span><i class="fa fa-clock-o"></i>
+                                       <span class="time"> 12:10 PM</span>
+                                    </span>
+                                    <span><i class="fa fa-map-marker"></i>
+                                        <span class="location">Conference room 1A</span>
+                                    </span>
+                                </p>
+
+                                <p id="data-show" style="display: none;">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+
+                            </div>
+                            <div class="list-item">
+                                <span>
+                                    <button onclick="dataToggleShow()">
+                                    <i class="fa fa-angle-right"></i></button>
+                                
+                            </span>
+                                <p>Marketing Meeting</p>
+
+                                <p>
+                                    <span><i class="fa fa-clock-o"></i>
+                                       <span class="time"> 09:00 AM</span>
+                                    </span>
+                                    <span><i class="fa fa-map-marker"></i>
+                                        <span class="location">Conference room 1A</span>
+                                    </span>
+                                </p>
+
+                                <p id="data-show" style="display: none;">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+
+                            </div>
+                            <div class="list-item">
+                                <span>
+                                    <button onclick="dataToggleShow()">
+                                    <i class="fa fa-angle-right"></i></button>
+                                
+                            </span>
+                                <p>Marketing Meeting</p>
+
+                                <p>
+                                    <span><i class="fa fa-clock-o"></i>
+                                       <span class="time"> 09:00 AM</span>
+                                    </span>
+                                    <span><i class="fa fa-map-marker"></i>
+                                        <span class="location">Conference room 1A</span>
+                                    </span>
+                                </p>
+
+                                <p id="data-show" style="display: none;">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <!-- chart js scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="./static/chart.js"></script>
+
+    <!-- DropDownToggle js scripts -->
+    <script src="./static/drop-down-toggle.js"></script>
+    <!-- DataShowToggle js scripts -->
+    <script src="./static/data-show-toggle.js"></script>
+
+    <!-- Sidebar Toggle Menu -->
+    <script src="./static/sidebarToggleMenu.js"></script>
+
+</body>
+
+</html>

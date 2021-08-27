@@ -1,0 +1,41 @@
+body {
+  font-family: arial;
+  color: #333;
+}
+
+h1 {
+  font-weight: normal;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.error {
+  display: none;
+}
+
+.activeError {
+  display: block !important;
+}
+
+.valid {
+  border-color: #36cc36 !important;
+}
+
+.invalid {
+  border-color: red !important;
+}
+
+input + p {
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+  color: red;
+  opacity: 0;
+  height: 0;
+}
+
+input.invalid + p {
+  opacity: 1;
+  height: auto;
+}
+/*# sourceMappingURL=style2.css.map */

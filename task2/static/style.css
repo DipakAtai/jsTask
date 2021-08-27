@@ -1,0 +1,1181 @@
+html {
+  font-family: Inter var, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-family: Inter var, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  line-height: 1.5;
+}
+
+body {
+  overflow: hidden;
+}
+
+.blue {
+  color: #3B82F6;
+}
+
+.red {
+  color: #EF4444;
+}
+
+.yellow {
+  color: #F59E0A;
+}
+
+.green {
+  color: #22C55F;
+}
+
+.green-box {
+  color: #166534;
+  background-color: #F0FDF5;
+}
+
+.blue-box {
+  color: #3730A3;
+  background-color: #EEF2FF;
+}
+
+.border-right {
+  border-right: 1px solid #a7bfe0;
+}
+
+.botom-border-none {
+  border-bottom: none !important;
+}
+
+.left-border-radius {
+  border-radius: 0 0 0 20px;
+}
+
+.right-border-radius {
+  border-radius: 20px 0 0 0;
+}
+
+.show {
+  display: block !important;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .sidebar {
+  position: absolute;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #0F172A;
+  color: #ffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 280px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.header .sidebar ::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.header .sidebar div.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.header .sidebar div.icons .logo {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.header .sidebar div.icons .logo img {
+  width: 30px;
+  margin: 8px;
+}
+
+.header .sidebar div.icons .icon_items {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4px;
+}
+
+.header .sidebar div.icons .icon_items i {
+  font-size: 20px;
+  color: #8B9AAF;
+  margin: 8px;
+}
+
+.header .sidebar .profile-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+
+.header .sidebar .profile-section .profile-img img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.header .sidebar .profile-section h3 {
+  margin-top: 24px;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.header .sidebar .profile-section p {
+  color: #94A3B8;
+  font-size: 13px;
+}
+
+.header .sidebar .side-menu {
+  line-height: .5;
+  margin: 0 10px;
+}
+
+.header .sidebar .side-menu span {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.header .sidebar .side-menu .vertical-nav p {
+  margin-left: 10px;
+  color: #798CF1;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header .sidebar .side-menu .vertical-nav span {
+  font-size: 11px;
+  color: #878B8D;
+}
+
+.header .sidebar .side-menu .vertical-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.header .sidebar .side-menu .vertical-nav ul li {
+  padding: 10px;
+  margin: 2px;
+}
+
+.header .sidebar .side-menu .vertical-nav ul li i {
+  color: #a39f9f;
+}
+
+.header .sidebar .side-menu .vertical-nav ul li span {
+  text-align: center;
+  color: #ffff;
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+.header .sidebar .side-menu .vertical-nav ul li span.badge {
+  background-color: yellow;
+  border-radius: 40px;
+  color: black;
+  padding: 2px;
+  margin-left: 40px;
+}
+
+.header .sidebar .side-menu .vertical-nav ul li.sidebar-dropdown {
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.header .sidebar .side-menu .vertical-nav ul li.sidebar-dropdown .sidebar-dropdown-btn {
+  background: transparent;
+  border: none;
+  color: #ffff;
+}
+
+.header .sidebar .side-menu .vertical-nav ul li.sidebar-dropdown .sidebar-dropdown--content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  overflow: auto;
+  padding: 10px;
+}
+
+.header .sidebar .side-menu .vertical-nav ul li.sidebar-dropdown .sidebar-dropdown--content a {
+  color: #ffffff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.header .sidebar .side-menu .vertical-nav ul li.sidebar-dropdown .sidebar-dropdown a:hover {
+  background-color: #ddd;
+}
+
+.header .sidebar .side-menu .vertical-nav ul li.sidebar-dropdown .sidebar-dropdown a:active {
+  background-color: #ffffff;
+  background-color: transparent;
+}
+
+.header .sidebar .side-menu .vertical-nav ul li.active {
+  background-color: #2C3344;
+  border-radius: 8px;
+}
+
+.header .sidebar .side-menu .vertical-nav ul li:hover {
+  background-color: #2C3344;
+  border-radius: 10px;
+}
+
+.header .sidebar .side-menu .vertical-nav .logo {
+  text-align: center;
+  opacity: .2;
+  padding: 10px;
+  margin: 10px;
+}
+
+.header .sidebar .side-menu .vertical-nav .logo img {
+  width: 160px;
+}
+
+.dashboard-section {
+  background-color: #F1F5F9;
+  left: 285px;
+  position: absolute;
+  left: 284px;
+  top: 0;
+  width: 85vw;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.dashboard-section .header-section {
+  background-color: #FFFFFF;
+  position: relative;
+  padding: 8px;
+}
+
+.dashboard-section .header-section .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard-section .header-section .navbar .menu {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  margin: 10px 30px;
+}
+
+.dashboard-section .header-section .navbar .menu a {
+  text-decoration: none;
+  color: #64748B;
+}
+
+.dashboard-section .header-section .navbar .menu a i.fa {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.dashboard-section .header-section .navbar .icons {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.dashboard-section .header-section .navbar .icons .icons_items {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.dashboard-section .header-section .navbar .icons .icons_items button {
+  margin: 10px;
+  background-color: transparent;
+  border: none;
+  color: #64748B;
+}
+
+.dashboard-section .header-section .navbar .icons .icons_items button img {
+  width: 24px;
+}
+
+.dashboard-section .header-section .header {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #0F172A;
+}
+
+.dashboard-section .header-section .header .profile-section .profile-img img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.dashboard-section div.heading {
+  background-color: #1E293B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 32px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dashboard-section div.heading div.profile-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 48px 0px;
+  width: 100%;
+  line-height: 1.75;
+}
+
+.dashboard-section div.heading div.profile-section div.profile {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffff;
+}
+
+.dashboard-section div.heading div.profile-section div.profile .profile-img img {
+  margin: auto;
+  width: 64px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.dashboard-section div.heading div.profile-section div.details .welcome-msg {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.dashboard-section div.heading div.profile-section div.details .notification {
+  color: #94A3B8;
+}
+
+.dashboard-section div.heading div.profile-section div.btns {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard-section div.heading div.profile-section div.btns .msg-btn,
+.dashboard-section div.heading div.profile-section div.btns .stng-btn {
+  color: #ffff;
+  background-color: #404C5E;
+  border-radius: 24px;
+  padding: 12px 30px;
+  margin: 16px;
+  border: none;
+  -webkit-box-shadow: 0 0 0 0 #0003, 0 0 0 0 #00000024, 0 0 0 0 #0000001f;
+          box-shadow: 0 0 0 0 #0003, 0 0 0 0 #00000024, 0 0 0 0 #0000001f;
+  cursor: pointer;
+}
+
+.dashboard-section div.heading div.profile-section div.btns .msg-btn:hover {
+  background-color: #394557;
+}
+
+.dashboard-section div.heading div.profile-section div.btns .stng-btn {
+  background-color: #473FCE;
+}
+
+.dashboard-section div.heading div.profile-section div.btns .stng-btn:hover {
+  background-color: #3f37d1;
+}
+
+.dashboard-section div.heading div.dropdown-menu {
+  color: white;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 16px 16px 0px 0px;
+  border: 1px solid #293445;
+  padding: 8px;
+  background-color: #293445;
+  color: #ffff;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.dashboard-section div.heading div.dropdown-menu .dropdown-icon {
+  margin-left: 10px;
+  font-size: 24px;
+  border-left: 2px solid #1E293B;
+}
+
+.dashboard-section div.heading div.dropdown-menu .dropdown-icon button {
+  cursor: pointer;
+  color: #94A3B8;
+  border: none;
+  background-color: transparent;
+}
+
+.dashboard-section div.container {
+  margin: 0 48px;
+}
+
+.dashboard-section div.container div.sub-header div.tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+}
+
+.dashboard-section div.container div.sub-header div.tags div.tags_items {
+  margin: 12px;
+}
+
+.dashboard-section div.container div.sub-header div.tags div.tags_items a {
+  text-decoration: none;
+  color: #717F95;
+}
+
+.dashboard-section div.container div.sub-header div.tags div.tags_items a.active {
+  color: black;
+  background-color: #DDE2E8;
+  border-radius: 24px;
+  padding: 12px 16px;
+}
+
+.dashboard-section div.container div.body-wrapper div.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard-section div.container div.body-wrapper div.cards div.card {
+  -webkit-box-shadow: 1px 1px 0 #0000001a, 0 1px 2px 0 #0000000f;
+          box-shadow: 1px 1px 0 #0000001a, 0 1px 2px 0 #0000000f;
+  display: block;
+  width: 100%;
+  padding: 16px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
+.dashboard-section div.container div.body-wrapper div.cards div.card .title span.dropdown {
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+
+.dashboard-section div.container div.body-wrapper div.cards div.card .title span.dropdown button.dropbtn,
+.dashboard-section div.container div.body-wrapper div.cards div.card .title span.dropdown button.dropbtn2,
+.dashboard-section div.container div.body-wrapper div.cards div.card .title span.dropdown button.dropbtn3,
+.dashboard-section div.container div.body-wrapper div.cards div.card .title span.dropdown button.dropbtn4 {
+  text-align: center;
+  padding: 8px;
+  background-color: transparent;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.dashboard-section div.container div.body-wrapper div.cards div.card .title span.dropdown button.dropbtn span,
+.dashboard-section div.container div.body-wrapper div.cards div.card .title span.dropdown button.dropbtn2 span,
+.dashboard-section div.container div.body-wrapper div.cards div.card .title span.dropdown button.dropbtn3 span,
+.dashboard-section div.container div.body-wrapper div.cards div.card .title span.dropdown button.dropbtn4 span {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.dashboard-section div.container div.body-wrapper div.cards div.card .title span.dropdown button:hover {
+  background-color: #f0f0f0;
+  border-radius: 50%;
+}
+
+.dashboard-section div.container div.body-wrapper div.cards div.card .title span.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.dashboard-section div.container div.body-wrapper div.cards div.card div.dropdown-content,
+.dashboard-section div.container div.body-wrapper div.cards div.card div.dropdown-content2,
+.dashboard-section div.container div.body-wrapper div.cards div.card div.dropdown-content3,
+.dashboard-section div.container div.body-wrapper div.cards div.card div.dropdown-content4 {
+  -webkit-box-shadow: 3px 3px 0 #0000001a, 0 1px 5px 0 #0000000f;
+          box-shadow: 3px 3px 0 #0000001a, 0 1px 5px 0 #0000000f;
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  overflow: auto;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 18px 0px;
+  margin-left: 200px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.dashboard-section div.container div.body-wrapper div.cards div.card div.dropdown-content a,
+.dashboard-section div.container div.body-wrapper div.cards div.card div.dropdown-content2 a,
+.dashboard-section div.container div.body-wrapper div.cards div.card div.dropdown-content3 a,
+.dashboard-section div.container div.body-wrapper div.cards div.card div.dropdown-content4 a {
+  color: #1e293b;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dashboard-section div.container div.body-wrapper div.cards div.card div.dropdown-content a:hover,
+.dashboard-section div.container div.body-wrapper div.cards div.card div.dropdown-content2 a:hover,
+.dashboard-section div.container div.body-wrapper div.cards div.card div.dropdown-content3 a:hover,
+.dashboard-section div.container div.body-wrapper div.cards div.card div.dropdown-content4 a:hover {
+  background-color: #f1f6f8;
+}
+
+.dashboard-section div.container div.body-wrapper div.cards div.card .body {
+  text-align: center;
+}
+
+.dashboard-section div.container div.body-wrapper div.cards div.card .body .amount {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-left: 40px;
+  font-family: nter var, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.dashboard-section div.container div.body-wrapper div.cards div.card .body .detail {
+  line-height: 1.5;
+  margin-right: 10px;
+}
+
+.dashboard-section div.container div.body-wrapper div.cards div.card .body .secondary-text {
+  line-height: 3;
+  color: #68748B;
+  font-size: 13px;
+}
+
+.dashboard-section div.container div.body-wrapper div.cards div.card .body .secondary-text span {
+  color: #64748B;
+  font-size: 16px;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section {
+  -webkit-box-shadow: 1px 1px 0 #0000001a, 0 1px 2px 0 #0000000f;
+          box-shadow: 1px 1px 0 #0000001a, 0 1px 2px 0 #0000000f;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section .sta-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0 10px 10px;
+  padding: 20px 0 10px 10px;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section .sta-heading div.left-heading {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section .sta-heading div.right-heading {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section .sta-heading div.right-heading button {
+  background-color: transparent;
+  border: none;
+  color: #64738B;
+  padding: 12px 16px;
+  cursor: pointer;
+  float: right;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section .sta-heading div.right-heading button:hover {
+  background-color: #f2f6fb;
+  border-radius: 24px;
+  border: none;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section .sta-heading div.right-heading button.active {
+  color: black;
+  background-color: #DDE2E8;
+  border-radius: 24px;
+  border: none;
+  padding: 12px 16px;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section .sta-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section .sta-wrapper .graph {
+  margin: 10px;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section .sta-wrapper .graph .title {
+  color: #64738B;
+  padding-bottom: 40px;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section .sta-wrapper .graph .grap-img canvas {
+  width: 600px;
+  height: 300px;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section .sta-wrapper div.github-details {
+  margin-left: 10px;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section .sta-wrapper div.github-details p {
+  margin-left: 20px;
+  color: #64738B;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section .sta-wrapper div.github-details div.bigger-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section .sta-wrapper div.github-details div.bigger-box div.box-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 40px 100px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section .sta-wrapper div.github-details div.bigger-box div.box-item div.number {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section .sta-wrapper div.github-details div.smaller-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section .sta-wrapper div.github-details div.smaller-box div.smaller_box_item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background-color: #F1F5F9;
+  color: #64748E;
+  border-radius: 20px;
+  margin: 8px;
+  line-height: 1.5;
+}
+
+.dashboard-section div.container div.body-wrapper div.sta-section .sta-wrapper div.github-details div.smaller-box div.smaller_box_item .number {
+  font-size: 2.25rem;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .task-dist {
+  -webkit-box-shadow: 1px 1px 0 #0000001a, 0 1px 2px 0 #0000000f;
+          box-shadow: 1px 1px 0 #0000001a, 0 1px 2px 0 #0000000f;
+  background-color: #FFFFFF;
+  color: #64748E;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 3px 5px #b6b0b0;
+          box-shadow: 2px 3px 5px #b6b0b0;
+  margin: 20px;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .task-dist .task-dist--heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .task-dist .task-dist--heading .left--heading {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .task-dist .task-dist--heading .right--heading button {
+  background-color: transparent;
+  border: none;
+  color: #64738B;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .task-dist .task-dist--heading .right--heading button:hover {
+  background-color: #f2f6fb;
+  border-radius: 24px;
+  border: none;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .task-dist .task-dist--heading .right--heading button.active {
+  color: black;
+  background-color: #DDE2E8;
+  border-radius: 24px;
+  border: none;
+  padding: 12px 16px;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .task-dist .task-dist-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .task-dist .task-dist-card .task-dist-card--item {
+  width: 100%;
+  background-color: #F8FAFC;
+  padding: 40px;
+  text-align: center;
+  border-top: 1px solid #a7bfe0;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .task-dist .task-dist-card .task-dist-card--item .number {
+  color: black;
+  font-size: 2.25rem;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .schd {
+  -webkit-box-shadow: 1px 1px 0 #0000001a, 0 1px 2px 0 #0000000f;
+          box-shadow: 1px 1px 0 #0000001a, 0 1px 2px 0 #0000000f;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+  margin: 20px;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .schd .task-schd--heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .schd .task-schd--heading .left--heading {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-left: 20px;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .schd .task-schd--heading .right--heading {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .schd .task-schd--heading .right--heading button {
+  background-color: transparent;
+  border: none;
+  color: #64738B;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .schd .task-schd--heading .right--heading button:hover {
+  background-color: #f2f6fb;
+  border-radius: 24px;
+  border: none;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .schd .task-schd--heading .right--heading button.active {
+  color: black;
+  background-color: #DDE2E8;
+  border-radius: 24px;
+  border: none;
+  padding: 12px 16px;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .schd .text-list .list-item {
+  border-bottom: 1px solid #a7bfe0;
+  margin: 20px;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .schd .text-list .list-item p {
+  font-size: 15px;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .schd .text-list .list-item span button {
+  background-color: transparent;
+  border: none;
+  float: right;
+  font-weight: bold;
+  padding: 12px;
+  margin: 12px 12px 12px 12px;
+  font-size: 20px;
+  color: #64748B;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .schd .text-list .list-item span button:hover {
+  border-radius: 50%;
+  background-color: #eeeeee;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .schd .text-list .list-item span button i {
+  font-weight: bold;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .schd .text-list .list-item p span {
+  color: #94A3B8;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .schd .text-list .list-item p span i {
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .schd .text-list .list-item p span.time,
+.dashboard-section div.container div.body-wrapper div.task-des .schd .text-list .list-item p span.location {
+  font-size: 13px;
+  margin-left: 8px;
+}
+
+.dashboard-section div.container div.body-wrapper div.task-des .schd .text-list .list-item p#data-show,
+.dashboard-section div.container div.body-wrapper div.task-des .schd .text-list .list-item p#data-show2,
+.dashboard-section div.container div.body-wrapper div.task-des .schd .text-list .list-item p#data-show3,
+.dashboard-section div.container div.body-wrapper div.task-des .schd .text-list .list-item p#data-show4,
+.dashboard-section div.container div.body-wrapper div.task-des .schd .text-list .list-item p#data-show5,
+.dashboard-section div.container div.body-wrapper div.task-des .schd .text-list .list-item p#data-show6 {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  header.header {
+    display: none;
+  }
+  main.dashboard-section {
+    left: 0 !important;
+    top: 0;
+    position: relative;
+    width: 100vw;
+  }
+  main.dashboard-section .dashboard-section .header-section {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  main.dashboard-section .heading .profile-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main.dashboard-section .heading div.dropdown-menu {
+    margin-right: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  div.container div.body-wrapper div.cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 30px;
+  }
+  div.container div.body-wrapper .sta-section .sta-heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.container div.body-wrapper .sta-section .sta-heading .right-heading {
+    margin-top: 10px;
+    margin-left: 0 !important;
+  }
+  div.container div.body-wrapper .sta-section .sta-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.container div.body-wrapper .sta-section .sta-wrapper .graph .grap-img canvas {
+    width: 400px !important;
+    height: 200px !important;
+  }
+  div.container div.body-wrapper .sta-section .sta-wrapper div.github-details div.bigger-box div.box-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 40px 100px;
+    margin: 20px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  div.container div.body-wrapper .sta-section .sta-wrapper div.github-details div.bigger-box div.box-item div.number {
+    font-size: 3rem !important;
+    font-weight: bold;
+  }
+  div.container div.body-wrapper .sta-section div.task-des {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  div.container div.body-wrapper .sta-section div.task-des .task-dist .task-dist--heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.container div.body-wrapper .sta-section div.task-des .task-dist .task-dist-image img {
+    width: 100%;
+  }
+  div.container div.body-wrapper .sta-section div.task-des .schd .task-schd--heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .sta-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sta-wrapper .graph .grap-img canvas {
+    width: 300px;
+    height: 200px;
+  }
+  .sta-wrapper div.github-details div.bigger-box div.box-item div.number {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  div.task-des {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  div.task-des .task-dist .task-dist-image img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sta-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sta-wrapper .graph .grap-img canvas {
+    width: 200 !important;
+    height: 160 !important;
+  }
+  .sta-wrapper .github-details div.bigger-box div.box-item {
+    padding: 20px 60px !important;
+    margin: 20px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

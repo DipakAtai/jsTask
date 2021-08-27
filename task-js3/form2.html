@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>RegEx Form</title>
+    <link rel="stylesheet" href="./static/css/style2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>New User Signup</h1>
+        <form class="border border-primary p-5 mt-5" id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp" placeholder="Enter your name">
+                <p>Name must be contain 3 - 12 characters</p>
+            </div>
+            <div id="nameError" class="error text-white text-center bg-danger px-3 m-5 w-75"></div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="text" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter your email">
+                <p>Email must be a valid address, e.g. me@mydomain.com</p>
+            </div>
+            <div id="emailError" class="error text-white text-center bg-danger px-3 m-5 w-75"></div>
+            <div class="form-group">
+                <label for="contactNo">Contact Number</label>
+                <input type="text" class="form-control" name="contactNo" id="contactNo" aria-describedby="contactNoHelp" placeholder="Enter your contact Number">
+                <p>Contact Number must be a valid with (10 digits)</p>
+
+            </div>
+            <div id="contactNoError" class="error text-white text-center bg-danger px-3 m-5 w-75"></div>
+            <div class="form-group">
+                <label class="mr-3">Gender</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="1">
+
+                    <label class="form-check-label" for="male">Male</label>
+
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="2">
+
+                    <label class="form-check-label" for="female">Female</label>
+
+                </div>
+
+            </div>
+            <div id="genderError" class="error text-white text-center bg-danger px-3 m-5 w-75"></div>
+            <div class="form-group">
+                <label for="inputCountry">Country</label>
+                <select id="country" class="form-control" name="country">
+                            <option selected></option>
+                            <option value="ind">India</option>
+                            <option value="usa">USA</option>
+                            <option value="uk">UK</option>
+                            <option value="bg">Bangladesh</option>
+                            <option value="pak">Pakistan</option>
+                        </select>
+
+            </div>
+            <div id="counteryError" class="error text-white text-center bg-danger px-3 m-5 w-75"></div>
+            <div class="g-recaptcha" data-sitekey="6LdceR8cAAAAAFAzyT-4iMEx-29R6XqgVyoWFzpR"></div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary w-25 py-3 pr-4 pl-4 mt-5 text-center">Submit</button>
+                <button type="reset" class="btn btn-danger w-25 py-3 pr-4 pl-4 mt-5 text-center">Reset</button>
+            </div>
+        </form>
+    </div>
+    <!-- <form>
+
+        <input type="text" name="username" placeholder="username">
+        <p>Username must be and contain 5 - 12 characters</p>
+
+        <input type="text" name="email" placeholder="email">
+        <p>Email must be a valid address, e.g. me@mydomain.com</p>
+
+        <input type="password" name="password" placeholder="password">
+        <p>Password must alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters</p>
+
+        <input type="text" name="telephone" placeholder="telephone">
+        <p>Telephone must be a valid UK telephone number (11 digits)</p>
+
+        <input type="text" name="slug" placeholder="profile slug">
+        <p>Slug must contain only lowercase letters, numbers and hyphens and be 8 - 20 characters</p>
+
+        <input type="submit" value="Submit">
+
+    </form> -->
+    <script type="text/javascript" src="./static/js/validation.js"></script>
+</body>
+
+</html>

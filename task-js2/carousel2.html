@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel in Vanila JavaScript2</title>
+    <link rel="stylesheet" href="./static/css/style2.css">
+</head>
+
+<body>
+
+    <div class="carousel" id="carousel">
+        <div class="carousel__container">
+            <ul class="carousel__indicators">
+                <li class="active" data-slide-to="0" data-flag="true"></li>
+                <li data-slide-to="1"></li>
+                <li data-slide-to="2"></li>
+                <li data-slide-to="3"></li>
+                <li data-slide-to="4"></li>
+                <li data-slide-to="5"></li>
+                <li data-slide-to="6"></li>
+            </ul>
+            <div class=" carousel__inner ">
+                <div class="carousel__item active "><img src="./assets/img1.jpg " /></div>
+                <div class="carousel__item "> <img src="./assets/img2.jpg " /></div>
+                <div class="carousel__item "> <img src="./assets/img3.jpg " /></div>
+                <div class="carousel__item "> <img src="./assets/img4.jpg " /></div>
+                <div class="carousel__item "> <img src="./assets/img5.jpg " /></div>
+                <div class="carousel__item "> <img src="./assets/img6.jpg " /></div>
+                <div class="carousel__item "> <img src="./assets/img7.jpg " /></div>
+            </div>
+            <a class="carousel__control carousel__control--prev ">
+                <span class="carousel__control--prev__icon ">
+                    &#10094;
+                </span>
+            </a>
+            <a class="carousel__control carousel__control--next ">
+                <span class="carousel__control--next__icon ">
+                    &#10095;
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <div style="text-align: center; padding-top: 20px; flex-direction: column;">
+        <a style="color: rgb(24, 245, 24); text-decoration: none;" href="./index.html">Go to Home</a>
+    </div>
+    <script src="./static/js/script2.js "></script>
+</body>
+
+</html>

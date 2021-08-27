@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Circular Progress Bar | CodingNepal</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+
+<body>
+    <div class="circular">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 300 300" preserveAspectRatio="none" style="width:300; height:300; top:0; left:0;">
+ 
+            <circle cx="100" cy="100" r="57" id="grey-halo" fill="none" stroke="#dddddd" stroke-width="2" transform="rotate(-90,100,100)" />
+            <circle cx="100" cy="100" r="57" id="green-halo" fill="none" stroke="#00CC33" stroke-width="2" stroke-dasharray="0,20000" transform="rotate(-90,100,100)" />
+            <circle cx="100" cy="50" r="5" id="pointer" fill="black"/>
+            
+             <text id="myTimer" text-anchor="middle" x="100" y="110" fill="#00CC33" style="font-size: 36px;" >0%</text>
+           </svg>
+    </div>
+    <div class="container">
+        <h1>Welcome To our Website</h1>
+    </div>
+    <script src="./static/js/script.js"></script>
+</body>
+
+</html>

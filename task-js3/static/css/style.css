@@ -1,0 +1,8 @@
+.error {
+  display: none;
+}
+
+.activeError {
+  display: block !important;
+}
+/*# sourceMappingURL=style.css.map */

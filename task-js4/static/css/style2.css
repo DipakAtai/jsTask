@@ -1,0 +1,24 @@
+.svg__loader-container {
+  background-color: #fb5979;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.svg__loader-container .circle {
+  height: 100%;
+  text-align: center;
+}
+
+.svg__loader-container .circle circle {
+  stroke: #e8f3e8;
+  stroke-width: 2px;
+  fill: none;
+}
+/*# sourceMappingURL=style2.css.map */

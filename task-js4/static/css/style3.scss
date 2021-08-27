@@ -1,0 +1,105 @@
+$color: #ffffff;
+$stroke-width: 3px;
+$size: 102px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #413f3f;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.reload {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    top: 25px;
+    right: 25px;
+    color: #b3b3b3;
+    background-color: #F3F3F3;
+    padding: 15px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    .icon {
+        width: 50%;
+        max-width: 300px;
+        path {
+            color: $color;
+            stroke-width: $stroke-width;
+            stroke-dashoffset: -3000;
+            stroke-dasharray: 3000;
+            &.is-active {
+                animation-name: icon;
+                animation-duration: 4s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+    .text {
+        width: 100%;
+        max-width: 900px;
+        text {
+            color: $color;
+            stroke-width: $stroke-width;
+            stroke-dashoffset: -800;
+            stroke-dasharray: 800;
+            &.is-active {
+                animation-name: text;
+                animation-duration: 4s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+}
+
+@keyframes icon {
+    50% {
+        stroke-dashoffset: 0;
+        stroke: #ffffff;
+        fill: transparent;
+        stroke-width: 12px;
+    }
+    75% {
+        fill: transparent;
+        stroke: #ffffff;
+        stroke-width: $stroke-width;
+        stroke-width: 20px;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: $color;
+        stroke-width: 0px;
+    }
+}
+
+@keyframes text {
+    50% {
+        fill: transparent;
+    }
+    75% {
+        fill: transparent;
+        stroke-dashoffset: 0;
+        stroke-width: $stroke-width;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        fill: $color;
+        stroke-width: 0px;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel in Vanila JavaScript</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+
+<body>
+
+    <div class="slide-show__container" id="slide-show">
+
+        <div class="slide-show__item">
+            <img class="slide-show__image" src="./assets/img1.jpg" alt="" />
+            <div class="slide-show__caption">Caption1</div>
+        </div>
+        <div class="slide-show__item">
+            <img class="slide-show__image" src="./assets/img2.jpg" alt="" />
+            <div class="slide-show__caption">Caption2</div>
+        </div>
+        <div class="slide-show__item">
+            <img class="slide-show__image" src="./assets/img3.jpg" alt="" />
+            <div class="slide-show__caption">Caption3</div>
+        </div>
+        <div class="slide-show__item">
+            <img class="slide-show__image" src="./assets/img4.jpg" alt="" />
+            <div class="slide-show__caption">Caption4</div>
+        </div>
+        <div class="slide-show__item">
+            <img class="slide-show__image" src="./assets/img5.jpg" alt="" />
+            <div class="slide-show__caption">Caption5</div>
+        </div>
+        <div class="slide-show__item">
+            <img class="slide-show__image" src="./assets/img6.jpg" alt="" />
+            <div class="slide-show__caption">Caption5</div>
+        </div>
+        <div class="slide-show__item">
+            <img class="slide-show__image" src="./assets/img7.jpg" alt="" />
+            <div class="slide-show__caption">Caption7</div>
+        </div>
+        <a class="slide-btn prev__btn" onclick="Slides(-1)">&#10094;</a>
+        <a class="slide-btn next__btn" onclick="Slides(1)">&#10095;</a>
+    </div>
+
+    <div class="slide__thumble">
+        <span class="slide__thumble-item" onclick="currentSlide(1)">
+            <img  src="./assets/img1.jpg" alt="" width="100px">
+        </span>
+        <span class="slide__thumble-item" onclick="currentSlide(2)"> 
+            <img  src="./assets/img2.jpg" alt="" width="100px"></span>
+        <span class="slide__thumble-item" onclick="currentSlide(3)">
+            <img src="./assets/img3.jpg" alt="" width="100px"></span>
+        <span class="slide__thumble-item" onclick="currentSlide(4)">
+            <img src="./assets/img4.jpg" alt="" width="100px"></span>
+        <span class="slide__thumble-item" onclick="currentSlide(5)">
+            <img src="./assets/img5.jpg" alt="" width="100px"></span>
+        <span class="slide__thumble-item" onclick="currentSlide(6)">
+            <img src="./assets/img6.jpg" alt="" width="100px"></span>
+        <span class="slide__thumble-item" onclick="currentSlide(7)">
+            <img src="./assets/img7.jpg" alt="" width="100px"></span>
+    </div>
+
+
+    <div style="text-align: center; padding-top: 20px;">
+        <a style="color: green; text-decoration: none;" href="./carousel2.html">Go to another carousel example</a>
+    </div>
+    <script src="./static/js/script.js"></script>
+</body>
+
+</html>
